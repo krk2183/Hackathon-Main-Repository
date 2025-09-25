@@ -1,4 +1,5 @@
 from openai import OpenAI
+
 # BU FAYLDA OPENROUTER MODELLERI ISLEDILE BILER
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
