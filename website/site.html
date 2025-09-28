@@ -2,18 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <!-- Navigation -->
     <div id="menu" class="menu">
-        <button onclick="location.href='upcoming.html'">Upcoming</button>
-        <button onclick="location.href='site.html'">Home</button>
+        <button onclick="location.href='upcoming.html'" class="upcoming-but">Upcoming</button>
+        <button onclick="location.href='site.html'" class="upcoming-but">Home</button>
     </div>
+
+    <!-- Title -->
     <h1 id="text" class="text">Todo App</h1>
 
+    <!-- Main -->
     <div id="main" class="main">
-        
+        <div class="task-input">
+            <input type="text" id="taskinputbox" placeholder="Enter a new task">
+            <select id="urgency">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="addtaskbutton">Add task</button>
+        </div>
+
+        <!-- Task list -->
+         <div class="task-list" id="task-list">
+
+         </div>
     </div>
+    <script src="site-backend.js"></script>
 </body>
 </html>
